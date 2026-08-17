@@ -18,5 +18,7 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 24.
+        - name: Listar arquivos na raiz
+      run: ls -la
     - run: npm install
     - run: npm test
